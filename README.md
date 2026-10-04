@@ -9,7 +9,7 @@
 
 ### 使用方法
 下載後壓縮檔後，解壓縮
-記得要有安裝node.js(18 以上)
+記得要有安裝node.js(22 以上，server 用的 firebase-admin 需要)
 在React-Firebase-Retrieve-And-Download下打npm i 或是 npm install 去安裝相關套件
 在React-Firebase-Retrieve-And-Download/server內 也打一次npm i 或是 npm install
 兩者都安裝完成後

@@ -24,7 +24,7 @@
 把網頁的datasetUrl複製過去修改就完成了所有前置步驟
 
 之後到server資料夾內打node server.js
-在React-Firebase-Retrieve-And-Download下內打npm start
+在React-Firebase-Retrieve-And-Download下內打npm run dev(http://localhost:3000)
 即可操作下載與更新firebase資料夾
 
 # English Version

@@ -1,4 +1,5 @@
-const admin = require("firebase-admin");
+const { initializeApp, cert } = require("firebase-admin/app");
+const { getFirestore } = require("firebase-admin/firestore");
 
 const serviceAccount = require("./lib/serviceAccountKey.json");
 
@@ -7,12 +8,12 @@ const fs = require("fs");
 
 const cors = require("cors");
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+initializeApp({
+  credential: cert(serviceAccount),
   // ------------------------這邊複製專案設定中的內容(官方有提供)------------------------
   databaseURL: "https://{yourdatabase}.firebaseio.com",
 });
-const db = admin.firestore();
+const db = getFirestore();
 
 let collectionData;
 db.listCollections().then((collections) => {

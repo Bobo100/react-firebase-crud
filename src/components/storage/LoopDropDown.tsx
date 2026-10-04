@@ -67,13 +67,13 @@ export const LoopDoubleDropDown = () => {
         });
     };
 
-    const renderSubfolders = (subfolders: FolderInfo[], level: number): JSX.Element => {
+    const renderSubfolders = (subfolders: FolderInfo[], level: number): React.JSX.Element => {
         const currentFolderName = selectedFolderName[level];
         if (!currentFolderName) {
             return <></>;
         }
 
-        const renderSelectedSubfolders = (subfolders: FolderInfo[]): JSX.Element => {
+        const renderSelectedSubfolders = (subfolders: FolderInfo[]): React.JSX.Element => {
             const currentFolderName = selectedFolderName[level];
             let currentFolder = folderList[selectedFolderName[0]];
             let selectedFolder = folderList[currentFolderName]
